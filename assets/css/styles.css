@@ -81,6 +81,7 @@ footer {
 }
 .container-section5 {
     grid-area: section5;
+
     color:var(--darkpurpel);
     background-color: white;
 
@@ -88,40 +89,75 @@ footer {
 }
 .container-section6 {
     grid-area: section6;
-    background-image: url("../img/Sección\ 2_\ propuesta\ de\ valor\ \(inicio\).png");
-
+    width: 100%;
+    min-height:130px;
+    background-repeat: no-repeat;
+    background-image: url("../img/Plasma_rico_plaquetas.png");
 }
+
+
 .container-section7 {
     grid-area: section7;
-
+    width: 100%;
+    min-height:130px;
+    background-repeat: no-repeat;
+    background-image: url("../img/Rinomodelación_cirugía.png");
 }
 .container-section8 {
     grid-area: section8;
+    width: 100%;
+    min-height:130px;
+    background-repeat: no-repeat;
+    background-image: url("../img/Limpieza_de_cutis.png");
 
 }
 .container-section9 {
     grid-area: section9;
+    width: 100%;
+    min-height:130px;
+    background-repeat: no-repeat;
+    background-image: url("../img/Dermapen.png");
 
 }
 .container-section10 {
     grid-area: section10;
+    width: 100%;
+    min-height:130px;
+    background-repeat: no-repeat;
+    background-image: url("../img/Relleno_labios.png");
 
 }
 .container-section11 {
     grid-area: section11;
+    width: 100%;
+    min-height:130px;
+    background-repeat: no-repeat;
+    background-image: url("../img/Sección\ 2_\ propuesta\ de\ valor\ \(inicio\).png");
 
 }
 .container-section12 {
     grid-area: section12;
 
 }
-
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 main section > h3{
     /* border:2px solid var(--purpel); */
     border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 400;
     background-color: var(--lightpurpel);
     color:var(--darkpurpel);
-    width: 75%;
+    width: 215px;
+    height: 30px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -192,4 +228,32 @@ nav>ul>li {
 footer ul li {
     text-decoration: none;
     display: inline-block;
+}
+
+/*Parte del css que toca especificamente parte de pages acerca*/
+
+main {
+    padding: 2%;
+    display:grid;
+    grid-template-areas: 
+    "section-acerca-1"
+    "section-acerca-2"
+    "section-acerca-3";
+   
+}
+
+.section-acerca-1{
+    grid-area: section-acerca-1;
+ 
+}
+.section-acerca-2{
+    grid-area: section-acerca-2;
+}
+.section-acerca-3{
+    grid-area: section-acerca-3;
+}
+
+.section-acerca-2 >div {
+    width: 100vw;
+    display:block
 }
