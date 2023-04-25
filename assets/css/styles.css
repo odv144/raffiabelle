@@ -7,7 +7,7 @@
     --purpel: #9F83BB;
     --lightpurpel: #BAB7DC;
     --size: 100vw;
-   
+   background-color: var(--lightpurpel);
 }
 
 body{
@@ -19,8 +19,9 @@ body{
 header {
     grid-area: header;
     background-color: var(--lightpurpel);
-    position: fixed;
+    position:sticky;
     top:0;
+    min-height: 50px;
     width: 100%;
 
 }
@@ -34,23 +35,42 @@ main {
     
 }
 
-main section div >img{
+
+
+
+
+main section{
+    min-height: 130px;
+    position: relative;
+}
+main section img{
+    max-width: 100%;
+    height: auto;
+}
+
+main>section>h3 {
+    position:absolute;
+
+}
+
+main>article > div >img{
     width: 35px;
     height: 35px;
     background-color: #4B2358;
 }
 
-main section div > h3{
+main article >div > h3{
     font-family:sans-serif, "Figtree";
     font-weight: bold;
     padding: 2%;
 
 }
-main section div>p{
+main article > div>p{
     font-family: sans-serif, "Figtree";
     font-size: 0.9em;
     padding: 2%;
 }
+
 
 footer {
     grid-area: footer;
@@ -60,7 +80,7 @@ footer {
 }
 
 /*areas de secciones internas de cada bloque*/
-.container-section1 {
+/* .container-section1 {
     grid-area: section1;
    
 }
@@ -78,61 +98,80 @@ footer {
 .container-section4 {
     grid-area: section4;
 
-}
+} */
 .container-section5 {
     grid-area: section5;
-
+    width: 100%;
     color:var(--darkpurpel);
     background-color: white;
-
+    display: grid; 
+    grid-template-columns: 
+    "3fr 1fr";
+    grid-template-rows: "1fr 1fr 1fr";
+ 
+    
 
 }
+.izquierdo{
+    grid-area: izquierdo;
+    grid-column:1/3;
+    
+    
+}
+
+.derecho{
+    grid-area: derecho;
+    grid-column: 3;
+    
+   
+}
+
+
 .container-section6 {
     grid-area: section6;
-    width: 100%;
     min-height:130px;
     background-repeat: no-repeat;
-    background-image: url("../img/Plasma_rico_plaquetas.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
 }
 
 
 .container-section7 {
     grid-area: section7;
-    width: 100%;
     min-height:130px;
     background-repeat: no-repeat;
-    background-image: url("../img/Rinomodelación_cirugía.png");
+   
 }
+
 .container-section8 {
     grid-area: section8;
-    width: 100%;
     min-height:130px;
     background-repeat: no-repeat;
-    background-image: url("../img/Limpieza_de_cutis.png");
 
 }
 .container-section9 {
     grid-area: section9;
-    width: 100%;
     min-height:130px;
     background-repeat: no-repeat;
-    background-image: url("../img/Dermapen.png");
+
 
 }
 .container-section10 {
     grid-area: section10;
-    width: 100%;
     min-height:130px;
     background-repeat: no-repeat;
-    background-image: url("../img/Relleno_labios.png");
+
 
 }
 .container-section11 {
     grid-area: section11;
-    width: 100%;
     min-height:130px;
     background-repeat: no-repeat;
-    background-image: url("../img/Sección\ 2_\ propuesta\ de\ valor\ \(inicio\).png");
+ 
 
 }
 .container-section12 {
@@ -161,18 +200,6 @@ main section > h3{
     
 }
 
-.footer1 {
-    grid-area: footer1;
-
-}
-
-.footer2 {
-    grid-area: footer1;
-}
-
-.footer3 {
-    grid-area: footer1;
-}
 
 
 /*maquetado para desktop*/
@@ -209,10 +236,13 @@ main section > h3{
 
 }
 
+
+
 nav>ul>li {
     padding: 5px;
-    border: 2px solid var(--darkpurpel);
+ 
     background-color: var(--purpel);
+    border: 2px solid var(--darkpurpel);
     border-radius: 10px;
     text-decoration: none;
     display: inline-block;
@@ -232,9 +262,11 @@ footer ul li {
 
 /*Parte del css que toca especificamente parte de pages acerca*/
 
-main {
+main.container-acerca {
     padding: 2%;
+    margin-left: 1% auto;
     display:grid;
+    font-family:"Figtree", sans-serif;
     grid-template-areas: 
     "section-acerca-1"
     "section-acerca-2"
@@ -244,16 +276,51 @@ main {
 
 .section-acerca-1{
     grid-area: section-acerca-1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
  
 }
 .section-acerca-2{
     grid-area: section-acerca-2;
-}
-.section-acerca-3{
-    grid-area: section-acerca-3;
+    background-image: url(../img/relax.png);
+    background-repeat: no-repeat;
+
+    background-size:cover;
 }
 
-.section-acerca-2 >div {
-    width: 100vw;
-    display:block
+.section-acerca-2 img{
+    max-width: 325px;
+}
+.section-acerca-2 div {
+    width: 100%;
+    
+}
+#marco-interno{
+   width: 90%;
+   margin: 5%;
+   
+    background-color:rgba(248, 248, 248, 0.5);
+
+}
+
+.section-acerca-3{
+    grid-area: section-acerca-3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-acerca-3 div{
+    background-color: var(--lightpurpel);
+    border-radius: 25px;
+    width: 80%;
+    margin:10px 0 10px 0;
+    padding: 5px;
+}
+.section-acerca-3>div>img{
+    width:35px;
+    height: 35px;
+    background-color: var(--darkpurpel);
 }
