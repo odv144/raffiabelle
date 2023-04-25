@@ -26,8 +26,9 @@ header {
 
 }
 
-main {
+main.container-home {
     grid-area: main;
+    max-width:100vw;
     background-color: var(--lightpurpel);
     margin:0;
     padding: 0;
@@ -35,24 +36,27 @@ main {
     
 }
 
-
-
-
-
-main section{
+main.container-home>section{
     min-height: 130px;
     position: relative;
 }
-main section img{
+main.container-home>section>img{
     max-width: 100%;
     height: auto;
 }
 
 main>section>h3 {
     position:absolute;
+   
 
 }
 
+main>article{
+    width: 100%;
+}
+main>article>div{
+    max-width: 100%;
+}
 main>article > div >img{
     width: 35px;
     height: 35px;
@@ -60,15 +64,18 @@ main>article > div >img{
 }
 
 main article >div > h3{
+   width:90%;
     font-family:sans-serif, "Figtree";
     font-weight: bold;
+    margin: 1%;
     padding: 2%;
 
 }
 main article > div>p{
+    width: 90%;
     font-family: sans-serif, "Figtree";
     font-size: 0.9em;
-    padding: 2%;
+    margin: 2%;
 }
 
 
@@ -101,7 +108,8 @@ footer {
 } */
 .container-section5 {
     grid-area: section5;
-    width: 100%;
+    max-width: 98%;
+ 
     color:var(--darkpurpel);
     background-color: white;
     display: grid; 
@@ -176,6 +184,8 @@ footer {
 }
 .container-section12 {
     grid-area: section12;
+    max-width: 100%;
+    margin:2%
 
 }
 main section{
@@ -309,22 +319,32 @@ main.container-acerca {
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
 }
 
 .section-acerca-3 div{
     background-color: var(--lightpurpel);
     border-radius: 25px;
-    width: 80%;
+    width: 90%;
     margin:10px 0 10px 0;
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
 }
 .section-acerca-3>div>img{
     width:35px;
     height: 35px;
     background-color: var(--darkpurpel);
 }
-
+.section-acerca-3>div>p{
+    margin:2%;
+    
+}
 /*Para el fino de la pages de servicio*/
 main>article>h3{
     font-size: 1.2rem;
@@ -338,28 +358,35 @@ main.servicio{
     width: 100vw;
 }
 
-main>section, section.container-service-1{
-    width: 90%;
+main>section{
+   
     min-height: 130px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:25px 10px;
+    margin:2% 1%;
 }
-main>section button, section.container-service-1 button{
+main>section button{
     border-radius: 25px;
     background-color: var(--lightpurpel);
-    padding: 5px;
+    padding: 5px 10px;
 }
 
-main>section button a, section.container-service-1 button a{
+main>section button a{
     text-decoration: none;
-
-
 }
 
-main>section>img , section.container-service-1>img{
+main>section>p{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+}
+
+main>section>img{
     border-radius: 10px;
+    max-width: 98%;
+   
     box-shadow: 10px 10px var(--purpel);
 }
 
