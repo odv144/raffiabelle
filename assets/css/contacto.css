@@ -64,6 +64,32 @@ main.container-contacto {
     ;
    
 }
+section.section-form{
+    align-items: center;
+}
+section.section-form>form{
+    margin:5%;
+    text-align: left;
+    
+
+}
+section.section-form>form>label{
+    display:block;
+
+}
+section.section-form>form>input{
+    display:block;
+
+}
+section.section-form>form>button{
+    display:block;
+    border-radius: 25px;
+    background-color: var(--lightpurpel);
+    padding: 2% 15%;
+    color:var(--darkpurpel);
+    font-weight: 900;
+
+}
 
 
 .section-acerca-3{
