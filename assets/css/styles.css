@@ -213,7 +213,7 @@ main section > h3{
 
 
 /*maquetado para desktop*/
-@media only screen and (min-width:500px) {
+/* @media only screen and (min-width:500px) {
 
     body {
         display: grid;
@@ -225,7 +225,7 @@ main section > h3{
     }
 
 
-}
+} */
 
 
 
