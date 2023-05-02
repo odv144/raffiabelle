@@ -179,7 +179,7 @@ main>section>p {
     grid-area: section6;
    
     aspect-ratio: 1/0.4;
-    background-image: url('/assets/img/Plasma_rico_plaquetas.png');
+    background-image: url('../img/Plasma_rico_plaquetas.png');
     background-size: cover;
 }
 
@@ -187,21 +187,21 @@ main>section>p {
 .container-section7 {
     grid-area: section7;
     aspect-ratio: 1/0.4;
-    background-image: url('/assets/img/Rinomodelación_cirugía.png');
+    background-image: url('../img/Rinomodelación_cirugía.png');
     background-size: cover;
 }
 
 .container-section8 {
     grid-area: section8;
     aspect-ratio: 1/0.4;
-    background-image: url('/assets/img/Limpieza_de_cutis.png');
+    background-image: url('../img/Limpieza_de_cutis.png');
     background-size: cover;
 }
 
 .container-section9 {
     grid-area: section9;
     aspect-ratio: 1/0.4;
-    background-image: url('/assets/img/Dermapen.png');
+    background-image: url('../img/Dermapen.png');
     background-size: cover;
 
 }
@@ -209,7 +209,7 @@ main>section>p {
 .container-section10 {
     grid-area: section10;
     aspect-ratio: 1/0.4;
-    background-image: url('/assets/img/Relleno_labios.png');
+    background-image: url('../img/Relleno_labios.png');
     background-size:cover;
 
 
