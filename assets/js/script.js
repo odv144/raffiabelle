@@ -13,7 +13,7 @@ var carrusel= document.getElementById("carrusel");
 var imagen = document.createElement("img");
 
 function slider(){
-    imagen.src="/assets/img/"+imag[index];
+    imagen.src="assets/img/"+imag[index];
     
     carrusel.appendChild(imagen);
     
