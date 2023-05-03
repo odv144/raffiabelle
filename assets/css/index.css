@@ -175,18 +175,43 @@ main>section>p {
 }
 
 .container-section1{
+   background-color:var(--purpel);
+   font-family: 'Figtree',sans-serif;
    
-    margin:2% 0;
+   font-weight: 700;
+   margin:2% 0;
+
+   padding: 2%;
 }
 .container-section1>div{
     min-height: 40vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color:white;
+
+}
+.container-section1>div>p{
+    min-height: 50px;
+
 }
 .container-section1>div>img{
-    width:95%;
+    width:75%;
+    border-radius: 50px;
     height: auto;
+}
+.container-section1>div>button{
+    min-height: 30px;
+    border-radius: 25px;
+    background-color: white;
+    margin:10px;
+    padding: 10px;
+    
+}
+.container-section1>div>button>a{
+    text-decoration: none;
+    color:var(--darkpurpel);
 }
 .container-section6 {
     grid-area: section6;
