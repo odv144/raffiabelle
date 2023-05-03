@@ -248,23 +248,6 @@ maquetado para desktop
 
 
 
-nav>ul>li {
-    padding: 5px;
- 
-    background-color: var(--purpel);
-    border: 2px solid var(--darkpurpel);
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-
-
-/* .container-section1 .circular{
-    background-color: rgb(250, 167, 0);
-    width: 30%;
-} */
-
 footer ul li {
     text-decoration: none;
     display: inline-block;
