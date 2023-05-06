@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap');
+
+:root {
+    margin:0;
+    padding: 0;
+    --darkpurpel: #4B2358;
+    --purpel: #9F83BB;
+    --lightpurpel: #BAB7DC;
+}    
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--lightpurpel);
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+.contenedor_nav {
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--lightpurpel);
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    border: 1px solid rgba(75, 35, 88, .6);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 3);
+   }
+
+
+.contenedor_logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_nav {
+    width: 8rem;
+    height: 4rem;
+}
+
+
+.contenedor_btn_icono {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.boton_cuenta {
+    display: inline-block;
+    padding: .3rem .5rem;
+    font-size: .8rem;
+    font-weight: 400;
+    background-color: #fff;
+    color: var(--darkpurpel);
+    border-radius: 2rem;
+    line-height: 1;
+    margin: 0 2rem;
+    transform: .3s;
+}
+
+.boton_cuenta:hover {
+    background-color: var(--darkpurpel);
+    color: #fff;
+}
+
+
+.icono_menu {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*para hacer el icono del menu*/
+.icono_menu div {
+    width: 1.3rem;
+    height: 2px;
+    border-radius: 3px;
+    background-color: var(--darkpurpel);
+    position: relative;
+    z-index: 1001;
+    transition: .5s;
+}
+
+.icono_menu div::before,
+.icono_menu div::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: var(--darkpurpel);
+    border-radius: 3px;
+}
+
+.icono_menu div::before {
+    transform: translateY(-7px);
+}
+
+.icono_menu div::after {
+    transform: translateY(7px);
+}
+
+#check {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 90000;
+    cursor: pointer;
+    opacity: 0;
+    display: block;
+}
+
+
+/*para hacer icono de la cruz*/
+#check:checked ~.contenedor_btn_icono .icono_menu div {
+    background-color: transparent;
+}
+
+
+#check:checked ~.contenedor_btn_icono .icono_menu div::before {
+    transform: translateY(0) rotate(-45deg);
+}
+
+#check:checked ~.contenedor_btn_icono .icono_menu div::after {
+    transform: translateY(0) rotate(45deg);
+}
+
+.nav_links {
+    position: fixed;
+    height: calc(100vh - 4rem);
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--purpel);    
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: .65s;
+}
+
+#check:checked ~.nav_links {
+    transform: translateX(0);
+}
+
+#check:checked ~.nav_links .nav_link {
+    animation: animacion .5s ease forwards var(--i);
+}
+
+
+.nav_links > ul {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.nav_link > a {
+    color: var(--darkpurpel);
+    padding: 1.4rem 0;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    line-height: 1;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.nav_link > a > i {
+    margin-left: .3rem;
+    margin-top: .3rem;
+}
+
+.nav_link:hover > a {
+    color: #fff;
+    text-shadow: 4px 4px 5px var(--darkpurpel);
+    background-color: var(--lightpurpel);
+}
+
+.desplegable {
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(10px);
+    opacity: 1;
+    pointer-events: auto;
+    transition: .5s;
+    display: none;
+}
+
+.desplegable ul {
+    position: relative;
+}
+
+.desplegable_link > a {
+    display: flex;
+    background-color: var(--darkpurpel);
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.desplegable_link:hover > a {
+    background-color: #fff;
+    color: var(--darkpurpel);
+}
+
+.desplegable_link:first-child:hover .nav_links > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.desplegable_link:not(:nth-last-child(2)) {
+    border-bottom: 1px solid #fff;
+}
+
+.flecha {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: 38%;
+    background-color: var(--darkpurpel);
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: .3s;
+    z-index: -1;
+}
+
+.desplegable_link:first-child:hover ~.flecha {
+    background-color: #fff;
+}
+
+.nav_link:hover>.desplegable,
+.desplegable_link:hover>.desplegable {
+    display: block;
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+@keyframes animacion {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+img {
+    width: 50%;
+}
+
+
+
+/*Maquetado Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023){
+    .contenedor_nav {
+        height: 5rem;
+    }
+
+    .logo_nav {
+        width: 9rem;
+        height: 5rem;
+    }
+
+    .boton_cuenta {
+        padding: .4rem .6rem;
+        font-size: .9rem;
+    }
+
+    .icono_menu {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .icono_menu div {
+        width: 1.5rem;
+        height: 3px;
+    }
+
+    .nav_links {
+        height: calc(100vh - 5rem);
+        top: 5rem;
+    }
+   
+    .nav_link > a {  
+       font-size: 1rem;           
+    }   
+
+    .desplegable_link > a {
+        font-size: 1.1rem;
+    }
+
+     /*ver posición flecha*/   
+    .flecha{
+        left: 50%;
+     } 
+    
+    }
+
+    
+
+
+/* Maquetado Dektop */
+@media screen and (min-width: 1024px) {
+
+    .contenedor_nav {
+        height: 6rem;
+    }
+
+    .logo_nav {
+        width: 10rem;
+        height: 6rem;
+    }
+
+
+    .boton_cuenta {
+        padding: .5rem .7rem;
+        font-size: 1rem;
+        margin: 0rem 2rem;
+    }
+
+    .icono_menu {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .icono_menu div {
+        width: 2rem;
+        height: 4px;
+    }
+
+    .nav_links {
+        height: calc(100vh - 6rem);
+        top: 6rem;
+        background-color: rgba(159, 131, 187, .6);
+    }
+
+    .nav_links > ul {
+        flex-direction: row;
+    }
+    
+    .nav_link > a {
+      font-size: 1.1rem;
+    }   
+
+    .nav_link:hover > a {
+        background-color: transparent;
+    }
+
+    .desplegable {
+        position: absolute;
+    }
+     
+    .desplegable_link > a {
+        background-color: rgba(75, 35, 88, .6);
+        color: #fff;
+        font-size: 1.1rem;
+    }
+    
+    .desplegable_link:hover > a {
+        background-color: rgba(255, 255, 255, .8);
+    }
+    
+    .desplegable_link:not(:nth-last-child(2)) {
+        border-bottom: 1px solid rgba(255, 255, 255, .8);
+    }
+   
+    .desplegable_link:first-child:hover ~.flecha {
+        background-color: #fff;
+    }
+
+
+   .flecha{
+        width: 11px;    
+        height: 11px;
+        top: -5.5px;
+        background-color: rgba(75, 35, 88, .6);
+        
+      
+    }
+    
+    .desplegable_link:first-child:hover ~ .flecha{
+        background-color: rgba(255, 255, 255, .8);
+    }
+    
+    
+    
+   
+    /* borrar imagen */
+    img {
+        top: 5rem;
+        width: 35%;
+    }
+}
