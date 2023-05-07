@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contacto.css">
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js"
+        integrity="sha256-FtvY52LIDZ2/QHmDNay6PTYvLlRsZICHak0iJEAIBuM=" crossorigin="anonymous"></script>
+  
     <title>💇‍♀️💇‍♂️💈Contacto de Rafiaa Belle 💈💇‍♂️💇‍♀️</title>
 </head>
 
@@ -19,45 +23,58 @@
                 <li><a href="acerca.html">Acerca</a></li>
                 <li><a href="servicio.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-               
-            
+
+
 
             </ul>
         </nav>
     </header>
+
 
     <main class="container-contacto">
         <section class="section-form">
             <img src="../img/RAFIAA BELLE- LOGOS-20 3.png" alt="logo">
             <h3>Contacte con Rafiaa Belle!</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius beatae? Aperiam blanditiis vero nulla sequi, dolore nostrum debitis corrupti, quam iusto voluptatibus porro nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius beatae? Aperiam blanditiis vero
+                nulla sequi, dolore nostrum debitis corrupti, quam iusto voluptatibus porro nobis.
             </p>
-            <form action="" method="post">
+            
+
+            <form action="#" method="post" name="registrarDatos" id="registrarDatos">
+                <div id="resultadoValidacion" >  </div>
                 <label for="ayn">Nombre y Apellido(*)</label>
-                <input type="text" name ="ayn" required placeholder="Ingrese Nombre">
+                <input type="text" name="ayn" required placeholder="Ingrese Nombre">
                 <label for="email">E-mail(*)</label>
-                <input type="emial" name="mail" required id="email" placeholder="usuario@gmail.com.ar">
+                <input type="email" id="correo" name="mail" required id="email" placeholder="usuario@gmail.com.ar">
                 <label for="tel">Teléfono</label>
                 <input type="tel" name="phone" placeholder="xxxxxxxxxx">
                 <label for="consulta">Consulta</label>
                 <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                <button type="submit" class="button">Enviar</button>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </section>
-     
+
         </section>
         <section class="section-acerca-3">
             <div>
-                <img src="" alt="">
+               
                 <p>Conocé todos los tratamientos que brindamos!</p>
             </div>
             <div>
-                <img src="" alt="">
+                
                 <p>Chateá con la Dra. Susana Rafiaa</p>
+            </div>
+            <div>
+                
+                <p>Inicio</p>
             </div>
         </section>
     </main>
+
+
 </body>
 
 </html>

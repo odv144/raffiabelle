@@ -86,53 +86,6 @@ footer {
         'footer';
 }
 
-/*areas de secciones internas de cada bloque*/
-/* .container-section1 {
-    grid-area: section1;
-   
-}
-
-.container-section2 {
-    grid-area: section2;
-  
-
-}
-.container-section3 {
-    grid-area: section3;
-
-}
-
-.container-section4 {
-    grid-area: section4;
-
-} */
-.container-section5 {
-    grid-area: section5;
-    max-width: 98%;
- 
-    color:var(--darkpurpel);
-    background-color: white;
-    display: grid; 
-    grid-template-columns: 
-    "3fr 1fr";
-    grid-template-rows: "1fr 1fr 1fr";
- 
-    
-
-}
-.izquierdo{
-    grid-area: izquierdo;
-    grid-column:1/3;
-    
-    
-}
-
-.derecho{
-    grid-area: derecho;
-    grid-column: 3;
-    
-   
-}
 
 
 .container-section6 {

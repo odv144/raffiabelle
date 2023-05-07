@@ -54,3 +54,41 @@ function slider(){
 }
 
 setInterval(slider, 5000);
+
+
+/*validacion  */
+window.addEventListener('load', () => {
+    
+    let validatdorFormulario = new FormValidator('registrarDatos', [{
+        name: 'ayn',
+        display: 'Nombre',
+        rules: 'required|min_length[5]'
+    },
+    {
+        name: 'mail',
+        display: 'Email',
+        rules: 'required|valid_email'
+    },
+    {
+        name: 'phone',
+        display: 'Phone',
+        rules: 'numeric|min_length[10]'
+    },
+    {
+        name: 'consulta',
+        display: 'Consulta',
+        rules: 'min_length[20]|max_lenght[255]'
+    }], function (errores, evento) {
+
+        if (errores.length) {
+            let mensaje = '';
+            errores.forEach(function (campo, indice, arreglo) {
+                mensaje += `${campo.message} <br/>`;
+            });
+            let caja = document.querySelector('#resultadoValidacion');
+            caja.innerHTML = mensaje;
+           
+        }
+    }
+    )
+});
