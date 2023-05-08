@@ -6,25 +6,25 @@
 const imgSlider=[
     {
         texto:"Las estaciones frías son ideales para una limpieza profunda",
-        imagen:"woman-having-facial-treatment1.png",
+        imagen:"woman-having-facial-treatment1.jpg",
         boton:"Conocé los beneficios del peeling",
         link:"#"
     },
     {
         texto:"Nuevo Tratamiento, Plasma rico en Plaquetas con gel bioestimulante, Tu piel iluminada y rejuvenecida",
-        imagen:"woman-having-facial-treatment2.png",
+        imagen:"woman-having-facial-treatment2.jpg",
         boton:"Agendá tu sesión de PRP",
         link:"#"
     },
     {
         texto:"Modelá tu nariz sin cirugía con ácido hialurónico",
-        imagen:"woman-having-facial-treatment3.png",
+        imagen:"woman-having-facial-treatment3.jpg",
         boton:"Conocé más sobre rinomodelación",
         link:"#"
     },
     {
         texto:"Conocé nuestra línea de productos LACA para cuidar tu piel",
-        imagen:"woman-having-facial-treatment4.png",
+        imagen:"woman-having-facial-treatment4.jpg",
         boton:"Encontrá todos los productos acá!",
         link:"#"
     },
