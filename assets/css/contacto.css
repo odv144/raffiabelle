@@ -36,7 +36,12 @@ section.section-form>form {
 .section-form>h3 {
     font-size: 1.3rem;
     color: white;
+    margin-top: 2%;
     font-family: "Figtree";
+    text-shadow:  -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 section.section-form>form>label {
@@ -45,9 +50,9 @@ section.section-form>form>label {
 }
 
 section.section-form>form>input {
-    display: inline-block;
+    display: block;
     text-align: center;
-
+    width:100%;
 }
 
 section>form>div.boton {
