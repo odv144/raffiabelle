@@ -29,7 +29,7 @@ a {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: var(--lightpurpel);
     width: 100%;
@@ -299,10 +299,105 @@ header {
     }
 }
 
-
-img {
-    width: 50%;
+.contenedor_slider{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: var(--lightpurpel);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
+.contenido_slider{
+    margin-top: 5rem;
+    position: relative;
+}
+
+
+.contenedor_img_slider{
+    text-align: center;
+    overflow: hidden;
+}   
+
+.img_slider{
+    margin-top: .5rem;
+    box-shadow: 5px 3px 5px 3px rgba(33, 1, 44, 0.37);
+    border-radius: 1.5rem;
+    width: 13rem;
+    height: 14rem;
+   }
+   
+
+.contenedor_textos_slider{
+    padding: 0 1rem 1rem 0;
+    overflow: hidden;
+    position: absolute;
+}    
+     
+    
+.titulo_slider{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0 0 5rem;
+    text-shadow: 4px 4px 5px var(--darkpurpel);
+}   
+
+.subtitulo_slider{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 18rem;
+    height: 4rem;
+    margin: 1rem 0 0 2.5rem;
+    text-shadow: 4px 4px 5px var(--darkpurpel);
+    text-align: center;
+    z-index: 1;
+}
+
+.boton_slider{
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 0 3rem;
+    border-radius: 2rem;
+    width: 17.5rem;
+    box-shadow: 4px 3px 4px 3px rgba(33, 1, 44, 0.37);   
+    z-index: 1; 
+}
+
+
+.color1{
+    background-color: #fff;
+    color: var(--darkpurpel);
+}
+
+.color2{
+    background-color: var(--darkpurpel);
+    color: #fff;
+}
+
+.color3{
+    background-color: var(--purpel);
+    color: var(--darkpurpel);
+}    
+
+.ola{
+    /* position: relative;  */
+    /* bottom: 0;
+    left: 0; */
+    margin-top: 50px;
+    width: 100%;     
+}    
+
+
+
+
+
+
+
+
 
 
 
@@ -353,6 +448,15 @@ img {
     }
 
     
+
+
+
+
+
+
+
+
+
 
 
 /* Maquetado Dektop */
