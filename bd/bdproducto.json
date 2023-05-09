@@ -1,0 +1,67 @@
+[
+    {
+        "price": "$4950",
+        "codigo":"540140004",
+        "pts":35,
+        "name": "Gel con Acido Tranexamico y Pentanol",
+        "categoria":"Renovacion Celular",
+        "image": "https://i.postimg.cc/Kjb4r0L9/COD-540140004.jpg",
+        "id": 1
+    },
+    {
+        "price": "$2162",
+        "codigo":"501610004",
+        "pts":16,
+        "name": "Crema Light",
+        "categoria":"Beauty",
+        "image": "https://i.postimg.cc/bJkst7GD/COD-501610004.jpg",
+        "id": 2
+    },
+    {
+        "price": "$3991",
+        "codigo":"545210004",
+        "pts":26,
+        "name": "Dermoaclarante",
+        "categoria":"Renovacion Celular",
+        "image": "https://i.postimg.cc/3wPkW8wQ/COD-545210004.jpg",
+        "id": 3
+    },
+    {
+        "price": "$2358",
+        "codigo":"18128304",
+        "pts":20,
+        "name": "83 Colacao",
+        "categoria":"Esmaltes Efecto Gel",
+        "image": "https://i.postimg.cc/VkZrQBQ6/COD-18128304.jpg",
+        "id": 4
+    },
+    {
+        "price": "$2358",
+        "codigo":"18128404",
+        "pts":20,
+        "name": "84 Cold Red",
+        "categoria":"Esmaltes Efecto Gel",
+        "image": "https://i.postimg.cc/mggz5pnJ/COD-18128404.jpg",
+        "id": 5
+    },
+    {
+        "price": "$2358",
+        "codigo":"18128504",
+        "pts":20,
+        "name": "85 Dry Green",
+        "categoria":"Esmaltes Efecto Gel",
+        "image": "https://i.postimg.cc/5tHHxYbm/COD-18128504.jpg",
+        "id": 6
+    },
+    {
+        "price": "$2358",
+        "codigo":"18128604",
+        "pts":20,
+        "name": "86 Magic Night",
+        "categoria":"Esmaltes Efecto Gel",
+        "image": "https://i.postimg.cc/BQgPNfm2/COD-18128604.jpg",
+        "id": 7
+    }
+
+    
+]
