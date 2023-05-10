@@ -56,7 +56,7 @@ section>div.productos{
     margin:2%;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-between;
     padding:5%;
     text-align: center;
     color:var(--darkpurpel);

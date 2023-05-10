@@ -61,6 +61,24 @@
         "categoria":"Esmaltes Efecto Gel",
         "image": "https://i.postimg.cc/BQgPNfm2/COD-18128604.jpg",
         "id": 7
+    },
+    {
+        "price": "$5148",
+        "codigo":"525090004",
+        "pts":32,
+        "name": "Crema Antiage con Coenzima Q",
+        "categoria":"Antiage",
+        "image": "https://i.postimg.cc/02WGBQmx/COD-525090004.jpg",
+        "id": 8
+    },
+    {
+        "price": "$5026",
+        "codigo":"545020004",
+        "pts":31,
+        "name": "Crema antiage alimentar Nutrir",
+        "categoria":"Antiage",
+        "image": "https://i.postimg.cc/L8JkKpBP/COD-545020004.jpg",
+        "id": 9
     }
 
     
