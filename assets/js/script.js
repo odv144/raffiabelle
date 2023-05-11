@@ -5,24 +5,28 @@
 //   });
 const imgSlider=[
     {
-        texto:"Las estaciones frías son ideales para una limpieza profunda",
+        titulo:"Bienvenido, frío!",
+        texto:"Este es el momento ideal para realizarte una limpieza profunda",
         imagen:"woman-having-facial-treatment1.jpg",
         boton:"Conocé los beneficios del peeling",
         link:"#"
     },
     {
+        titulo:"El perfil que querés!",
         texto:"Nuevo Tratamiento, Plasma rico en Plaquetas con gel bioestimulante, Tu piel iluminada y rejuvenecida",
         imagen:"woman-having-facial-treatment2.jpg",
         boton:"Agendá tu sesión de PRP",
         link:"#"
     },
     {
+        titulo:"Nuevo tratamiento!",
         texto:"Modelá tu nariz sin cirugía con ácido hialurónico",
         imagen:"woman-having-facial-treatment3.jpg",
         boton:"Conocé más sobre rinomodelación",
         link:"#"
     },
     {
+        titulo:"Tu piel merece lo mejor!",
         texto:"Conocé nuestra línea de productos LACA para cuidar tu piel",
         imagen:"woman-having-facial-treatment4.jpg",
         boton:"Encontrá todos los productos acá!",
@@ -40,13 +44,16 @@ let imagen = document.createElement("img");
 let texto = document.createElement("p");
 let boton = document.createElement("button");
 let link = document.createElement("a");
+let titulo = document.createElement("h2");
 
 function slider(){
+    titulo.textContent = imgSlider[index].titulo;
     imagen.src="assets/img/"+imgSlider[index].imagen;
     texto.textContent = imgSlider[index].texto;
     link.href = imgSlider[index].link;
     link.textContent=imgSlider[index].boton;
     boton.appendChild(link);
+    carrusel.appendChild(titulo);
     carrusel.appendChild(texto);
     carrusel.appendChild(imagen);
     carrusel.appendChild(boton);

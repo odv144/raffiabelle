@@ -319,4 +319,11 @@ section.container-section12>iframe{
         grid-column: 1 / -1;
         grid-row: 9/10;
     }
+    #carrusel{
+        height: 400px;
+    }
+    #carrusel>img{
+        max-height:200px;
+        aspect-ratio: 1/1;
+    }
 }
