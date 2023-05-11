@@ -34,12 +34,13 @@ const imgSlider=[
     },
 ];
 
-// const imag=["woman-having-facial-treatment1.png",
-//     "woman-having-facial-treatment2.png",
-//     "woman-having-facial-treatment3.png",
-//     "woman-having-facial-treatment4.png"];
 let index=0;
 let carrusel= document.getElementById("carrusel");
+let divContenedor = document.getElementById("contenedor_slider_omar");
+let divContenido = document.getElementById("contenido_slider_omar");
+let divTexto = document.getElementById("texto_slider");
+let divContenedorImg = document.getElementById("img_slider");
+
 let imagen = document.createElement("img");
 let texto = document.createElement("p");
 let boton = document.createElement("button");
@@ -53,10 +54,16 @@ function slider(){
     link.href = imgSlider[index].link;
     link.textContent=imgSlider[index].boton;
     boton.appendChild(link);
-    carrusel.appendChild(titulo);
-    carrusel.appendChild(texto);
-    carrusel.appendChild(imagen);
-    carrusel.appendChild(boton);
+
+    // carrusel.appendChild(titulo);
+    // carrusel.appendChild(texto);
+    //carrusel.appendChild(imagen);
+    // carrusel.appendChild(boton);
+    divContenedorImg.appendChild(imagen);
+    divTexto.appendChild(titulo);
+    divTexto.appendChild(texto);
+    divTexto.appendChild(boton);
+    
     (index<3)?index++:index=0;
 }
 
