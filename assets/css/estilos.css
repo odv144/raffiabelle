@@ -29,12 +29,7 @@ a {
 }
 
 header {
-<<<<<<< HEAD
-    grid-area:header;
-    position: sticky;
-=======
     position: fixed;
->>>>>>> origin/Mariana
     top: 0;
     background-color: var(--lightpurpel);
     width: 100%;
