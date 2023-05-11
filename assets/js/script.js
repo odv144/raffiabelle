@@ -4,34 +4,34 @@
 //     // Tu código aquí
 //   });
 const imgSlider=[
-    {
-        titulo:"Bienvenido, frío!",
-        texto:"Este es el momento ideal para realizarte una limpieza profunda",
-        imagen:"woman-having-facial-treatment1.jpg",
-        boton:"Conocé los beneficios del peeling",
-        link:"#"
-    },
-    {
-        titulo:"El perfil que querés!",
-        texto:"Nuevo Tratamiento, Plasma rico en Plaquetas con gel bioestimulante, Tu piel iluminada y rejuvenecida",
-        imagen:"woman-having-facial-treatment2.jpg",
-        boton:"Agendá tu sesión de PRP",
-        link:"#"
-    },
-    {
-        titulo:"Nuevo tratamiento!",
-        texto:"Modelá tu nariz sin cirugía con ácido hialurónico",
-        imagen:"woman-having-facial-treatment3.jpg",
-        boton:"Conocé más sobre rinomodelación",
-        link:"#"
-    },
-    {
-        titulo:"Tu piel merece lo mejor!",
-        texto:"Conocé nuestra línea de productos LACA para cuidar tu piel",
-        imagen:"woman-having-facial-treatment4.jpg",
-        boton:"Encontrá todos los productos acá!",
-        link:"#"
-    },
+    // {
+    //     titulo:"Bienvenido, frío!",
+    //     texto:"Este es el momento ideal para realizarte una limpieza profunda",
+    //     imagen:"woman-having-facial-treatment1.jpg",
+    //     boton:"Conocé los beneficios del peeling",
+    //     link:"#"
+    // },
+    // {
+    //     titulo:"El perfil que querés!",
+    //     texto:"Nuevo Tratamiento, Plasma rico en Plaquetas con gel bioestimulante, Tu piel iluminada y rejuvenecida",
+    //     imagen:"woman-having-facial-treatment2.jpg",
+    //     boton:"Agendá tu sesión de PRP",
+    //     link:"#"
+    // },
+    // {
+    //     titulo:"Nuevo tratamiento!",
+    //     texto:"Modelá tu nariz sin cirugía con ácido hialurónico",
+    //     imagen:"woman-having-facial-treatment3.jpg",
+    //     boton:"Conocé más sobre rinomodelación",
+    //     link:"#"
+    // },
+    // {
+    //     titulo:"Tu piel merece lo mejor!",
+    //     texto:"Conocé nuestra línea de productos LACA para cuidar tu piel",
+    //     imagen:"woman-having-facial-treatment4.jpg",
+    //     boton:"Encontrá todos los productos acá!",
+    //     link:"#"
+    // },
 ];
 
 let index=0;
