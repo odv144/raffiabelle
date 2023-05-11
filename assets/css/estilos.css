@@ -3,8 +3,8 @@
 :root {
     margin:0;
     padding: 0;
-    --darkpurpel: #4B2358;
-    --purpel: #9F83BB;
+    --darkpurpel: rgb(75, 35, 88);
+    --purpel: rgb(159, 131, 187);
     --lightpurpel: #BAB7DC;
 }    
 
