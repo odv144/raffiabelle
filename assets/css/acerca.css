@@ -30,17 +30,15 @@ header {
   background-color: #4b2358;
   text-align: center;
   margin-top: 0.9rem;
+  padding: 2%;
 }
 
 .contenedor-ppal {
-  position: relative;
-  float: none;
   background-color: #9f83bb;
   margin: 2em auto;
   width: 100%;
-
-  display: flex;
-  justify-content: center;
+  display:flex;
+justify-content: center;
   align-items: center;
 }
 
@@ -71,44 +69,38 @@ header {
   font-size: 0.8rem;
   margin: 1em 2em;
 }
-
+.tbox1 > h1{
+  text-align: center;
+}
 .contenedor-galeria-texto {
-  position: relative;
-  float: none;
+  
   background-color: #9f83bb;
   margin: 2em auto;
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.tbox2 {
-  display: inline-block;
-  background-color: #9f83bb;
-  margin: 3em 1em;
-  min-width: 430px;
+div>article{
+  display:flex;
+  margin:2px;
+  padding: 2%;
+}
+article>img{
+ width: 261px;
+  height: 175px;
+  margin-right: 5%;
 }
 
-.galeria {
-  display: inline-block;
-  margin: 3em 1em;
+article>p{
+  font-size: 1.2rem;
+  font-family: 'Figtree';
+  font-weight: bold;
+  color:#4b2358;
+  line-height: 1.7rem;
+  margin: 2% ;
 }
+
 
 .frase1 {
   font-size: 1.3rem;
   color: aliceblue;
-}
-
-.cuerpo-acerca {
-  font-size: 1rem;
-  color: aliceblue;
-  line-height: 1.7rem;
-  margin: 1rem 0;
-}
-
-.image-table {
-  width: 261px;
-  height: 175px;
 }
