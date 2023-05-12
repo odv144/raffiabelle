@@ -221,7 +221,7 @@ section.container-section12>iframe{
 }
 
 /*Esta parte es para el templa de minimo 720 */
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
 
     body {
         display: grid;
@@ -318,5 +318,12 @@ section.container-section12>iframe{
     .direccion{
         grid-column: 1 / -1;
         grid-row: 9/10;
+    }
+    #carrusel{
+        height: 400px;
+    }
+    #carrusel>img{
+        max-height:200px;
+        aspect-ratio: 1/1;
     }
 }

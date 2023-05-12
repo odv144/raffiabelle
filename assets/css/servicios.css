@@ -18,7 +18,7 @@ body {
 }
 
 body>* {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -36,81 +36,97 @@ header {
 
 }
 
-
-nav>ul>li {
-    padding: 5px;
-    background-color: var(--purpel);
-    border: 2px solid var(--darkpurpel);
-    border-radius: 10px;
-    display: inline-block;
-}
 a{
     text-decoration: none;
 }
 
 
-main.container-home {
+main{
     grid-area: main;
-    max-width: 100vw;
+    grid-template-areas:
+    'header1'
+    'section1'
+    'section2'
+    'section3'
+    'section4'
+    'section5'
+    'section-acerca'
+    ;
+    width: 100vw;
     background-color: var(--lightpurpel);
     margin: 0;
     padding: 0;
     text-align: center;
 
 }
+main>div{
+    grid-area: header1;
+    width:100%;
+    margin: 5%;
+    padding: 5%;
 
-main.container-home>section {
-    display: flex;
-    min-height: 130px;
+}
+main>div>h3{
+    color:white;
+    font-size: 1.3rem;
+    font-family: 'Figtree';
+    font-weight: bold;
+}
+main>section {
     justify-content: center;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
-    max-width: 100%;
-    margin: 2%;
+    margin: 5% 0 5% 0;
+    
 
 }
-
-main.container-home>section>img {
-    max-width: 100%;
-    height: auto;
-}
-
-main>section>h3 {
-    position: absolute;
-
-
-}
-
-main>article {
-    width: 100%;
-}
-
-main>article>div {
-    max-width: 100%;
-}
-
-main>article>div>img {
-    width: 35px;
+main>section>span{
+    background-color: var(--darkpurpel);
+    min-width:100%;
     height: 35px;
-    background-color: #4B2358;
+    display: flex;
+    color:white;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
-main article>div>h3 {
-    width: 90%;
-    font-family: sans-serif, "Figtree";
+main>section>h3{
+    display:flex;
+    min-width:100%;
+      align-items: center;
+    justify-content: center;
+    color:black;
     font-weight: bold;
-    margin: 1%;
     padding: 2%;
-
+    margin:2%;
 }
 
-main article>div>p {
-    width: 90%;
-    font-family: sans-serif, "Figtree";
-    font-size: 0.9em;
-    margin: 2%;
+main>section>div{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+    padding: 2%;
 }
+main>section>div>p{
+    width: 100%;
+    color:white;
+    text-align: left;
+    color: black;
+    font-stretch: expanded;
+}
+
+main>section>img {
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 10px 10px var(--purpel);
+    height: auto;
+  
+}
+
+
 
 main section>div.contenido-grid {
     grid-area: section5;
@@ -126,36 +142,6 @@ main section>div.contenido-grid {
 
 }
 
-.izquierdo {
-    grid-area: izquierdo;
-    grid-column: 1/3;
-
-
-}
-
-.derecho {
-    grid-area: derecho;
-    grid-column: 3;
-
-
-}
-
-main section>h3 {
-    /* border:2px solid var(--purpel); */
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 400;
-    background-color: var(--lightpurpel);
-    color: var(--darkpurpel);
-    width: 215px;
-    height: 30px;
-    align-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 main>section button {
     border-radius: 25px;
     background-color: var(--lightpurpel);
@@ -167,78 +153,52 @@ main>section button a {
     font-weight: bold;
 }
 
-main>section>p {
-    align-items: center;
-    text-align: center;
-    width: 100%;
+
+
+.container-section1 {
+    grid-area: section1;
+      aspect-ratio: 1/0.4;
 
 }
 
 
-.container-section6 {
-    grid-area: section6;
+.container-section2 {
+    grid-area: section2;
+    aspect-ratio: 1/0.4;
    
+}
+
+.container-section3{
+    grid-area: section3;
     aspect-ratio: 1/0.4;
-    background-image: url('../img/Plasma_rico_plaquetas.png');
-    background-size: cover;
+  
 }
 
-
-.container-section7 {
-    grid-area: section7;
+.container-section4 {
+    grid-area: section4;
     aspect-ratio: 1/0.4;
-    background-image: url('../img/Rinomodelación_cirugía.png');
-    background-size: cover;
+    /* background-image: url('../img/Dermapen.png');
+    background-size: cover; */
+
 }
 
-.container-section8 {
-    grid-area: section8;
+.container-section5 {
+    grid-area: section5;
     aspect-ratio: 1/0.4;
-    background-image: url('../img/Limpieza_de_cutis.png');
-    background-size: cover;
-}
-
-.container-section9 {
-    grid-area: section9;
-    aspect-ratio: 1/0.4;
-    background-image: url('../img/Dermapen.png');
-    background-size: cover;
-
-}
-
-.container-section10 {
-    grid-area: section10;
-    aspect-ratio: 1/0.4;
-    background-image: url('../img/Relleno_labios.png');
-    background-size:cover;
-
-
-}
-
-.container-section11 {
-    grid-area: section11;
-    min-width: 360px;
-
-
-}
-
-.container-section12 {
-    grid-area: section12;
     
-    max-width: 100%;
-    margin: 2%
+
 }
-section.container-section12>iframe{
-    aspect-ratio: 1/0.5;
+.section-acerca-3{
+    grid-area:section-acerca;
 }
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
 
     body {
         display: grid;
-        grid-column: 5% 90% 5%;
+        /* grid-column: 5% 90% 5%; */
         grid-template-areas:
-        'header header '
-        'main main ';
+        'header'
+        'main';
        
         /* grid-template-rows: 30% 70%; */
     }
@@ -246,12 +206,19 @@ section.container-section12>iframe{
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
-    main.container-home  {
+    main  {
 
         display:grid;
+        grid-template-areas: 
+        'header1'
+        'section2'
+        'section3'
+        'section4'
+        'section5'
+        'section-acerca';
         width:100vw;
-        grid-template-columns: 30% 15% 15% 30% ;
-        grid-template-rows: repeat(1fr,13);
+        /* grid-template-columns: 30% 15% 15% 30% ;
+        grid-template-rows: repeat(1fr,13); */
         background-color:var(--purpel);
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
@@ -260,66 +227,44 @@ section.container-section12>iframe{
     } 
    
 
-    article.container-section1{
+   main>div{
+        
         grid-column:  1 / -1;
         grid-row: 1 / 1;
         margin-bottom: 2%;
         
     }
     
-    .article1{
-        grid-column: 1/ span 1;
-        grid-row: 2/3;
-    }
-    .article2{
-        grid-column: 2/ span 2;
-        grid-row: 2 / 3;
-    }
-    .article3{
-        grid-column: 4 / span 1;
-        grid-row: 2 / 3;
-    }
-    .container-section5{
+    .container-section1{
+       
         grid-column: 1/ -1;
         grid-row:3/4;
     }
 
-    .container-section6 {
+    .container-section2 {
+        
         grid-column: 1 / span 2;
         grid-row:4/5
        
     }
-    .container-section7 {
+    .container-section3 {
+        
         grid-column: 3 / span 2;
         grid-row:4/5;
        
     } 
-    .container-section8 {
+    .container-section4 {
+       
         grid-column: 1 / span 2;
         grid-row:5/6;
     } 
-    .container-section9 {
+    .container-section5 {
+        
         grid-column: 3 / span 2;
         grid-row:5/6;
     }
-    .container-section10 {
-        grid-column: 1 / span 2;
-        grid-row:6/7;
-    }
-    .container-section11 {
-        grid-column: 3 / span 2;
-        grid-row:6/7;
-    }
-    .container-section12 {
-        grid-column: 1 / -1;
-        grid-row:8/9;
-       
-    }
-    section.container-section12>iframe{
-        aspect-ratio: 1/0.2;
-    }
-    .direccion{
-        grid-column: 1 / -1;
-        grid-row: 9/10;
+   
+    .section-acerca-3{
+        grid-column: 1/span 3;
     }
 }
