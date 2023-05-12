@@ -69,10 +69,15 @@ header {
     justify-content: flex-end;
 }
 
+.contenedor_btn_icono i{
+    font-size: .7rem;
+}
+
+
 .boton_cuenta {
     display: inline-block;
-    padding: .3rem .5rem;
-    font-size: .8rem;
+    padding: .3rem .3rem;
+    font-size: .7rem;
     font-weight: 400;
     background-color: #fff;
     color: var(--darkpurpel);
@@ -285,6 +290,11 @@ header {
     pointer-events: auto;
 }
 
+.slider{
+    height: 100vh;
+}
+
+
 .contenedor_slider{
     position: relative;
     height: 100vh;
@@ -371,7 +381,7 @@ header {
 
 .ola{
     margin-top: 75px;
-    width: 140%;  
+    width: 200%;  
      
 }    
 
@@ -535,6 +545,10 @@ header {
         height: 5rem;
     }
 
+    .contenedor_btn_icono i{
+        font-size: .8rem;
+    }
+
     .boton_cuenta {
         padding: .4rem .6rem;
         font-size: .9rem;
@@ -594,6 +608,9 @@ header {
         height: 6rem;
     }
 
+    .contenedor_btn_icono i{
+        font-size: 1rem;
+    }
 
     .boton_cuenta {
         padding: .5rem .7rem;
