@@ -14,7 +14,7 @@ html * {
 body {
     font-family: 'Figtree', sans-serif, 'Nunito';
     margin: 0;
-    padding: 0;
+    padding-top: 40px;
 }
 
 body>* {
@@ -187,7 +187,10 @@ main>section button a {
     background-size: cover; */
 
 }
-
+#seccion-5,#seccion-4,#seccion-3,#seccion-2,#seccion-1{
+    margin-bottom: 240px;
+    min-height: 100px;
+}
 .container-section5 {
     grid-area: section5;
     aspect-ratio: 1/0.4;
