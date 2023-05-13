@@ -26,75 +26,79 @@ header {
 
 }
 
-main {
-    grid-area: main;
+main {   
     max-width:100vw;
-    background-color: var(--lightpurpel);
-    margin:0;
+    background-color: var(--lightpurpel);   
+    margin-top: 1.5rem;
     padding: 0;
     text-align: center;
+  
     
 }
-main>h2{
-    font-family: 'Figtree';
-    font-size: 2rem;
+
+main > h2{
+    font-family: 'Figtree';    
     color: white;
-    text-shadow: 
-        1px 1px 0 black, 
-        -1px 1px 0 black, 
-        1px -1px 0 black, 
-        -1px -1px 0 black ;
+    text-shadow: 4px 4px 5px var(--darkpurpel);
+    margin-bottom: 5px;
 }
+
+
+.titulo{
+    font-size: 1.3rem;
+}
+
+.subtitulo{
+    font-size: 1.1rem;  
+}
+
 
 #storage-producto{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+   margin-top: 9px;
 }
 
-section>div.productos{
-    background-color: white;
-    margin:2%;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
+section > div.productos{   
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 34px 0 rgba(31, 38, 135, 0.37);   
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;   
+    margin: 10px;
     padding:5%;
+    display:flex;   
+    justify-content:space-between;   
     text-align: center;
     color:var(--darkpurpel);
 }
-section>div.productos >h4{
-    font-size: 1.2rem;
-    border-top: 2px solid var(--darkpurpel);
-    border-right: 2px solid var(--purpel);
-    border-top-left-radius: 20px;
-    border-bottom: 2px solid var(--purpel);
-    border-left: 2px solid var(--darkpurpel);
-    border-bottom-right-radius: 20px;
-    background-color: var(--lightpurpel);
+
+section > div.productos > h4{
+    font-size: .9rem;
+    text-shadow: 3px 3px 4px var(--purpel);  
     font-weight: bold;
     width: 100%;
+    margin-left: 8px;  
 }
 
-section>div.productos > div.item-pro{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+section>div.productos > div.item-pro > img{
+    min-width: 20%;
+    max-width: 50%;
+    border-radius: 8px;
+    box-shadow: 4px 2px 4px 2px rgba(33, 1, 44, 0.37); 
+    padding: 2px ; 
+    margin: 0 0 0 24px;
 }
-section>div.productos > div.item-pro>img{
-    min-width: 50%;
-    max-width: 80%;
-    ;
-    display:block;
+
+section > div.productos > div.item-pro > label{
+    font-size: .9rem;
+    font-weight: bold;     
+    text-shadow: 3px 3px 4px var(--purpel); 
 }
-section>div.productos > div.item-pro>label{
-    font-size: 1rem;
-    font-weight: bold;
-    
-}
+
+
 
 /*marcado de areas para movil*/
 
-@media only screen and (min-width : 400px) {
+/* @media only screen and (min-width : 400px) {
 
     body {
         background-color: var(--lightpurpel);
@@ -104,8 +108,64 @@ section>div.productos > div.item-pro>label{
             'main'
             'footer';
     }
+} */
 
 
 
+/* Tablet */
+@media only screen and (min-width:768px)  {
+    .titulo{
+        font-size: 1.8rem;
+    }
+    
+    .subtitulo{
+        font-size: 1.5rem;    
+    }
+
+    section > div.productos > h4{
+     font-size: 1.2rem; 
+    }    
 }
 
+
+/* Desktop */
+ @media only screen and (min-width:1024px) {
+    .titulo{
+        font-size:3rem;    
+    }
+    
+    .subtitulo{
+        font-size: 2.5rem
+    }
+    
+    #storage-producto{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    
+    section > div.productos{       
+        margin: 8px;      
+        height: 18rem;       
+    }
+
+    section > div.productos > h4{
+        font-size: 1.2rem;           
+    }
+    
+    section > div.productos > div.item-pro{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section>div.productos > div.item-pro > img{
+        min-width: 50%;
+        max-width: 70%;
+        display:block;
+        padding: 4px ; 
+    }
+    
+    section > div.productos > div.item-pro > label{
+        font-size: 1.2rem;
+    }
+}
