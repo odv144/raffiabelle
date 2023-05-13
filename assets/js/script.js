@@ -38,29 +38,30 @@ const imgSlider=[
 //     "woman-having-facial-treatment2.png",
 //     "woman-having-facial-treatment3.png",
 //     "woman-having-facial-treatment4.png"];
-let index=0;
-let carrusel= document.getElementById("carrusel");
-let imagen = document.createElement("img");
-let texto = document.createElement("p");
-let boton = document.createElement("button");
-let link = document.createElement("a");
-let titulo = document.createElement("h2");
+// let index=0;
+// let carrusel= document.getElementById("carrusel");
+// let imagen = document.createElement("img");
+// let texto = document.createElement("p");
+// let boton = document.createElement("button");
+// let link = document.createElement("a");
+// let titulo = document.createElement("h2");
 
-function slider(){
-    titulo.textContent = imgSlider[index].titulo;
-    imagen.src="assets/img/"+imgSlider[index].imagen;
-    texto.textContent = imgSlider[index].texto;
-    link.href = imgSlider[index].link;
-    link.textContent=imgSlider[index].boton;
-    boton.appendChild(link);
-    carrusel.appendChild(titulo);
-    carrusel.appendChild(texto);
-    carrusel.appendChild(imagen);
-    carrusel.appendChild(boton);
-    (index<3)?index++:index=0;
-}
+// function slider(){
+//     titulo.textContent = imgSlider[index].titulo;
+//     imagen.src="assets/img/"+imgSlider[index].imagen;
+//     texto.textContent = imgSlider[index].texto;
+//     titulo.textContent = "Este es mi texto de prueba";
+//     link.href = imgSlider[index].link;
+//     link.textContent=imgSlider[index].boton;
+//     boton.appendChild(link);
+//     carrusel.appendChild(texto);
+//     carrusel.appendChild(imagen);
+//     carrusel.appendChild(boton);
+//     carrusel.appendChild(titulo);
+//     (index<3)?index++:index=0;
+// }
 
-setInterval(slider, 5000);
+// setInterval(slider, 5000);
 
 
 /*validacion  */
