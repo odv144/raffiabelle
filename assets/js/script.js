@@ -67,7 +67,7 @@ function slider(){
     (index<3)?index++:index=0;
 }
 
-setInterval(slider, 5000);
+// setInterval(slider, 5000);
 
 
 /*validacion  */
