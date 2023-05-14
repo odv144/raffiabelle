@@ -14,7 +14,7 @@ html * {
 body {
     font-family: 'Figtree', sans-serif, 'Nunito';
     margin: 0;
-    padding-top: 40px;
+  
 }
 
 body>* {
@@ -117,9 +117,8 @@ main>section>div>p{
     width: 100%;
     color:white;
     text-align: left;
-    color: black;
+    color: var(--darkpurpel);
     font-stretch: expanded;
-    text-align:center;
     font-weight: bold;
 }
 
@@ -187,10 +186,7 @@ main>section button a {
     background-size: cover; */
 
 }
-#seccion-5,#seccion-4,#seccion-3,#seccion-2,#seccion-1{
-    margin-bottom: 240px;
-    min-height: 100px;
-}
+
 .container-section5 {
     grid-area: section5;
     aspect-ratio: 1/0.4;
@@ -254,18 +250,30 @@ display:flex;
     main>section>span{
         font-size: 2rem;
         font-weight: bold;
+        text-shadow: 4px 4px 5px var(--lightpurpel);
         padding: 2%;
     }
     main>section>h3{
         font-size: 1.5rem;
+        width: 70%;
         font-weight: 900;
         color:var(--darkpurpel);
     }
     main>section>div{
         color:var(--darkpurpel);
         font-size:1.2rem;
+        
         padding: 2%;
+        width: 70%;
     }
-   
+    main>section>img {
+        border-radius: 10px;
+        margin-bottom: 2%;
+        max-width: 100%;
+        box-shadow: 10px 10px var(--purpel);
+        width: 70%;
+      
+    }
+    
 
 }
