@@ -1,8 +1,29 @@
 
 // codigo que permite ejercutarlo recien cuando cargue todo el dom
-// document.addEventListener("DOMContentLoaded", function() {
-//     // Tu código aquí
-//   });
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("registrarDatos").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const form = document.querySelector("form");
+        let dataForm = new FormData(form);
+    
+        dataForm.append("ticket_time", new Date().toString());
+    
+        // console.log(dataForm);
+    
+        const URL = "https://sheetdb.io/api/v1/miekuv8bhpjsi";
+    
+        await fetch(URL, {
+            method: "POST",
+            body: dataForm,
+        });
+    
+        form.classList.add("animation");
+    
+        alert("Gracias por tu mensaje");
+        window.location.href =
+            "../../index.html";
+    });
+  });
 const imgSlider=[
     // {
     //     titulo:"Bienvenido, frío!",
@@ -71,7 +92,7 @@ function slider(){
 
 
 /*validacion  */
-window.addEventListener('load', () => {
+window.addEventListener('load', (e) => {
     
     let validatdorFormulario = new FormValidator('registrarDatos', [{
         name: 'ayn',
@@ -106,3 +127,7 @@ window.addEventListener('load', () => {
     }
     )
 });
+
+// Parte para enviar el  formulario
+
+
