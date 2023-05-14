@@ -103,4 +103,6 @@ article>p{
 .frase1 {
   font-size: 1.3rem;
   color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
