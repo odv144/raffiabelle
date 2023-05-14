@@ -306,7 +306,6 @@ header {
 
 .contenido_slider{
     margin-top: 6.5rem;
-    /* position: relative; */
 }
 
 
@@ -697,7 +696,7 @@ header {
             }
            
            .img_slider{
-            margin-top: 6rem;  
+            margin-top: 7.5rem;  
             width: 18rem;
             height: 19rem;
            }
