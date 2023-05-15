@@ -1,12 +1,18 @@
-import productos from '../../bd/bdproducto.json' assert { type: "json"};
-
-// fetch('../../bd/bdproducto.json')
+// import productos from 'https://sheetdb.io/api/v1/ot6fm99qrr7ig' assert { type: "json"}; 
+// import productos from '../../bd/bdproducto.json' assert { type: "json"};
+// var produ;
+// fetch('https://sheetdb.io/api/v1/ot6fm99qrr7ig')
 //   .then(response => response.json())
-//   .then(data => console.log(data))
+//   .then(data => {
+//     produ = data;
+//     return console.log(data)
+//     })
 //   .catch(error => console.error(error));
-// console.log(productos);
 
-// productos.forEach((producto)=> console.log(`%c ${producto.name}`,"color:green")); 
+//   console.log("este es producto "+produ);
+
+//  productos.forEach((producto)=> console.log(`%c ${producto.name}`,"color:green")); 
+// const prod = JSON.parse(data);
 
 class Producto{
     constructor ( name, precio,image){
@@ -38,7 +44,8 @@ class Producto{
 
 }
 
-let prodObjeto = productos.map((pro)=> new Producto(pro.name,pro.price,pro.image),);
+// let prodObjeto = productos.map((pro)=> new Producto(pro.name,pro.price,pro.image),);
+// let prodObjeto = produ.map((pro)=> new Producto(pro.name,pro.price,pro.image),);
 
 // let filtered = prodObjeto.filter((pro)=> pro.getValueInFloat() > 4900,);
 

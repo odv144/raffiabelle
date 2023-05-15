@@ -14,7 +14,7 @@ html * {
 body {
     font-family: 'Figtree', sans-serif, 'Nunito';
     margin: 0;
-    padding: 0;
+  
 }
 
 body>* {
@@ -22,7 +22,7 @@ body>* {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--lightpurpel);
+    /* background-color: var(--lightpurpel); */
 }
 
 
@@ -33,6 +33,7 @@ header {
     top: 0;
     min-height: 50px;
     width: 100%;
+    overflow:hidden;
 
 }
 
@@ -53,7 +54,7 @@ main{
     'section-acerca'
     ;
     width: 100vw;
-    background-color: var(--lightpurpel);
+    /* background-color: var(--lightpurpel); */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -62,12 +63,13 @@ main{
 main>div{
     grid-area: header1;
     width:100%;
-    margin: 5%;
+    background-color: var(--purpel);
+   
     padding: 5%;
 
 }
 main>div>h3{
-    color:white;
+    color: var(--darkpurpel);
     font-size: 1.3rem;
     font-family: 'Figtree';
     font-weight: bold;
@@ -78,7 +80,7 @@ main>section {
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
-    margin: 5% 0 5% 0;
+    margin: 2% 0 2% 0;
     
 
 }
@@ -88,7 +90,7 @@ main>section>span{
     height: 35px;
     display: flex;
     color:white;
-    font-size: 1rem;
+    font-size: 1.4rem;
     align-items: center;
     justify-content: center;
 }
@@ -100,6 +102,7 @@ main>section>h3{
     justify-content: center;
     color:black;
     font-weight: bold;
+    
     padding: 2%;
     margin:2%;
 }
@@ -108,18 +111,20 @@ main>section>div{
    width: 100%;
    display: flex;
    flex-direction: column;
-    padding: 2%;
+    padding: 5%;
 }
 main>section>div>p{
     width: 100%;
     color:white;
     text-align: left;
-    color: black;
+    color: var(--darkpurpel);
     font-stretch: expanded;
+    font-weight: bold;
 }
 
 main>section>img {
     border-radius: 10px;
+    margin-bottom: 2%;
     max-width: 90%;
     box-shadow: 10px 10px var(--purpel);
     height: auto;
@@ -190,11 +195,30 @@ main>section button a {
 }
 .section-acerca-3{
     grid-area:section-acerca;
+    margin:5%;
+    
 }
+.section-acerca-3>div{
+display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:2%;
+    width:50%;
+    border:2px solid var(--darkpurpel);
+    background-color: var(--purpel);
+    border-radius: 15px;
+  
+}
+.section-acerca-3>div>p{
+    text-align: center;
+}
+
+
 @media (min-width: 1024px) {
 
     body {
         display: grid;
+        
         /* grid-column: 5% 90% 5%; */
         grid-template-areas:
         'header'
@@ -202,15 +226,13 @@ main>section button a {
        
         /* grid-template-rows: 30% 70%; */
     }
-    header{
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
+    
     main  {
 
         display:grid;
         grid-template-areas: 
         'header1'
+        'section1'
         'section2'
         'section3'
         'section4'
@@ -219,52 +241,39 @@ main>section button a {
         width:100vw;
         /* grid-template-columns: 30% 15% 15% 30% ;
         grid-template-rows: repeat(1fr,13); */
-        background-color:var(--purpel);
+       
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
         
          
     } 
-   
-
-   main>div{
+    main>section>span{
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 4px 4px 5px var(--lightpurpel);
+        padding: 2%;
+    }
+    main>section>h3{
+        font-size: 1.5rem;
+        width: 70%;
+        font-weight: 900;
+        color:var(--darkpurpel);
+    }
+    main>section>div{
+        color:var(--darkpurpel);
+        font-size:1.2rem;
         
-        grid-column:  1 / -1;
-        grid-row: 1 / 1;
+        padding: 2%;
+        width: 70%;
+    }
+    main>section>img {
+        border-radius: 10px;
         margin-bottom: 2%;
-        
+        max-width: 100%;
+        box-shadow: 10px 10px var(--purpel);
+        width: 70%;
+      
     }
     
-    .container-section1{
-       
-        grid-column: 1/ -1;
-        grid-row:3/4;
-    }
 
-    .container-section2 {
-        
-        grid-column: 1 / span 2;
-        grid-row:4/5
-       
-    }
-    .container-section3 {
-        
-        grid-column: 3 / span 2;
-        grid-row:4/5;
-       
-    } 
-    .container-section4 {
-       
-        grid-column: 1 / span 2;
-        grid-row:5/6;
-    } 
-    .container-section5 {
-        
-        grid-column: 3 / span 2;
-        grid-row:5/6;
-    }
-   
-    .section-acerca-3{
-        grid-column: 1/span 3;
-    }
 }
