@@ -83,16 +83,18 @@ header {
 
 }
 
-.tbox1 > h3{
 
-  /* overflow:hidden;
+/*
+.tbox1 > h3{
+   overflow:hidden;
   margin: 0 auto;
   white-space: nowrap;
   letter-spacing: .15em;
   animation:
-    typing 3s steps(40,end); */
-
-}
+    typing 3s steps(40,end);
+    
+  }
+  */
 
 @keyframes typing {
     from {width: 0%;}
