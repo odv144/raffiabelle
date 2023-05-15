@@ -5,58 +5,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/contacto.css">
-    <title>Sobre Rafiaa Belle</title>
+    <script
+      src="https://kit.fontawesome.com/f189bdf4da.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/3e1cac33e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js"
+        integrity="sha256-FtvY52LIDZ2/QHmDNay6PTYvLlRsZICHak0iJEAIBuM=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f189bdf4da.js" crossorigin="anonymous"></script>   
+    
+    <title>Contacto Rafiaa Belle</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../assets/pages/acerca.html">Acerca</a></li>
-                <li><a href="../assets/pages/servicio.html">Servicios</a></li>
-                <li><a href="">Contacto</a></li>
-               
-            
+   <!-- inicio header  -->
+   <header>
+    <nav class="contenedor_nav">
+      <input type="checkbox" name="" id="check" />
 
-            </ul>
-        </nav>
-    </header>
+      <div class="contenedor_logo">
+        <a href="../../index.html">
+          <img src="../img/logo2.png" alt="" class="logo_nav"
+        /></a>
+      </div>
 
-    <main class="container-contacto">
+      <div class="contenedor_btn_icono">
+        <a href="#" class="boton_cuenta">
+         <i class="fa-brands fa-whatsapp"></i> Reservá tu turno</a >
+
+        <div class="icono_menu">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="nav_links">
+        <ul>
+          <li class="nav_link" style="--i: 0.6s">
+            <a href="../../index.html">Inicio</a>
+          </li>
+
+          <li class="nav_link" style="--i: 0.85s">
+            <a href="servicio.html"
+              >Servicios<i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="desplegable">
+              <ul>
+                <li class="desplegable_link">
+                  <a href="servicio.html#seccion-1"
+                    >Plasma rico en plaquetas</a
+                  >
+                </li>
+                <li class="desplegable_link">
+                  <a href="servicio.html#seccion-2"
+                    >Rinomodelación sin cirugía</a
+                  >
+                </li>
+                <li class="desplegable_link">
+                  <a href="servicio.html#seccion-3"
+                    >Limpieza de cutis & Peeling</a
+                  >
+                </li>
+                <li class="desplegable_link">
+                  <a href="servicio.html#seccion-4">Dermapen</a>
+                </li>
+                <li class="desplegable_link">
+                  <a href="servicio.html#seccion-5"
+                    >Relleno de labios</a
+                  >
+                </li>
+                <div class="flecha"></div>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav_link" style="--i: 1.1s">
+            <a href="productos.html">Productos LACA</a>
+          </li>
+
+          <li class="nav_link" style="--i: 1.35s">
+            <a href="acerca.html">Acerca de Rafiaa Belle</a>
+          </li>
+
+          <li class="nav_link" style="--i: 1.6s">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- fin del header  -->
+        <main class="container-contacto">
         <section class="section-form">
-            <img src="../img/RAFIAA BELLE- LOGOS-20 3.png" alt="logo">
-            <h3>Contacte con Rafiaa Belle!</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius beatae? Aperiam blanditiis vero nulla sequi, dolore nostrum debitis corrupti, quam iusto voluptatibus porro nobis.
-            </p>
-            <form action="" method="post">
+            <!-- <img src="../img/RAFIAA BELLE- LOGOS-20 3.png" alt="logo"> -->
+           
+            <h3 class="titulo"><i>Tu mejor versión te espera!</i></h3>
+            <h3 class="subtitulo"><i>Contactate con nuestro equipo</i></h3>
+            
+            <form action="#" method="post" name="registrarDatos" id="registrarDatos" class="formulario_contacto">
+                <div id="resultadoValidacion"> </div>
                 <label for="ayn">Nombre y Apellido(*)</label>
-                <input type="text" name ="ayn" required placeholder="Ingrese Nombre">
+                <input type="text" name="ayn" required placeholder="Ingrese Nombre">
                 <label for="email">E-mail(*)</label>
-                <input type="emial" name="mail" required id="email" placeholder="usuario@gmail.com.ar">
+                <input type="email" id="correo" name="mail" required id="email" placeholder="usuario@gmail.com.ar">
                 <label for="tel">Teléfono</label>
                 <input type="tel" name="phone" placeholder="xxxxxxxxxx">
                 <label for="consulta">Consulta</label>
                 <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                <button type="submit" class="button">Enviar</button>
+                <div class="boton">
+                    <input class="btn"type="submit" value="Enviar">
+                </div>
             </form>
         </section>
-     
+
         </section>
         <section class="section-acerca-3">
             <div>
-                <img src="" alt="">
-                <p>Conocé todos los tratamientos que brindamos!</p>
+              <a href="/assets/pages/servicio.html">Conocé todos los tratamientos que brindamos!</a>              
             </div>
             <div>
-                <img src="" alt="">
-                <p>Chateá con la Dra. Susana Rafiaa</p>
+              <a href="#">Chateá con la Dra. Susana Rafiaa</a>               
             </div>
-        </section>
+         </section>
     </main>
+
+
 </body>
 
 </html>

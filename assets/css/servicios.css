@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&family=Nunito:wght@400;700;900&display=swap');
+
+:root {
+    --darkpurpel: #4B2358;
+    --purpel: #9F83BB;
+    --lightpurpel: #BAB7DC;
+}
+
+html * {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Figtree', sans-serif, 'Nunito';
+    margin: 0;
+  
+}
+
+body>* {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: var(--lightpurpel); */
+}
+
+
+
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    min-height: 50px;
+    width: 100%;
+    overflow:hidden;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+main{
+    grid-area: main;
+    grid-template-areas:
+    'header1'
+    'section1'
+    'section2'
+    'section3'
+    'section4'
+    'section5'
+    'section-acerca'
+    ;
+    width: 100vw;
+    /* background-color: var(--lightpurpel); */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+main>div{
+    grid-area: header1;
+    width:100%;
+    background-color: var(--purpel);
+   
+    padding: 5%;
+
+}
+main>div>h3{
+    color: var(--darkpurpel);
+    font-size: 1.3rem;
+    font-family: 'Figtree';
+    font-weight: bold;
+}
+main>section {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 2% 0 2% 0;
+    
+
+}
+main>section>span{
+    background-color: var(--darkpurpel);
+    min-width:100%;
+    height: 35px;
+    display: flex;
+    color:white;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section>h3{
+    display:flex;
+    min-width:100%;
+      align-items: center;
+    justify-content: center;
+    color:black;
+    font-weight: bold;
+    
+    padding: 2%;
+    margin:2%;
+}
+
+main>section>div{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+    padding: 5%;
+}
+main>section>div>p{
+    width: 100%;
+    color:white;
+    text-align: left;
+    color: var(--darkpurpel);
+    font-stretch: expanded;
+    font-weight: bold;
+}
+
+main>section>img {
+    border-radius: 10px;
+    margin-bottom: 2%;
+    max-width: 90%;
+    box-shadow: 10px 10px var(--purpel);
+    height: auto;
+  
+}
+
+
+
+main section>div.contenido-grid {
+    grid-area: section5;
+    max-width: 360px;
+    color: var(--darkpurpel);
+    background-color: white;
+    display: grid;
+    grid-template-columns:
+        "3fr 1fr";
+    /* grid-template-rows: "1fr 1fr 1fr"; */
+    margin: 2%;
+
+
+}
+
+main>section button {
+    border-radius: 25px;
+    background-color: var(--lightpurpel);
+    padding: 5px 10px;
+}
+
+main>section button a {
+    color: var(--darkpurpel);
+    font-weight: bold;
+}
+
+
+
+.container-section1 {
+    grid-area: section1;
+      aspect-ratio: 1/0.4;
+
+}
+
+
+.container-section2 {
+    grid-area: section2;
+    aspect-ratio: 1/0.4;
+   
+}
+
+.container-section3{
+    grid-area: section3;
+    aspect-ratio: 1/0.4;
+  
+}
+
+.container-section4 {
+    grid-area: section4;
+    aspect-ratio: 1/0.4;
+    /* background-image: url('../img/Dermapen.png');
+    background-size: cover; */
+
+}
+
+.container-section5 {
+    grid-area: section5;
+    aspect-ratio: 1/0.4;
+    
+
+}
+.section-acerca-3{
+    grid-area:section-acerca;
+    margin:5%;
+    
+}
+.section-acerca-3>div{
+display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:2%;
+    width:50%;
+    border:2px solid var(--darkpurpel);
+    background-color: var(--purpel);
+    border-radius: 15px;
+  
+}
+.section-acerca-3>div>p{
+    text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+
+    body {
+        display: grid;
+        
+        /* grid-column: 5% 90% 5%; */
+        grid-template-areas:
+        'header'
+        'main';
+       
+        /* grid-template-rows: 30% 70%; */
+    }
+    
+    main  {
+
+        display:grid;
+        grid-template-areas: 
+        'header1'
+        'section1'
+        'section2'
+        'section3'
+        'section4'
+        'section5'
+        'section-acerca';
+        width:100vw;
+        /* grid-template-columns: 30% 15% 15% 30% ;
+        grid-template-rows: repeat(1fr,13); */
+       
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        
+         
+    } 
+    main>section>span{
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 4px 4px 5px var(--lightpurpel);
+        padding: 2%;
+    }
+    main>section>h3{
+        font-size: 1.5rem;
+        width: 70%;
+        font-weight: 900;
+        color:var(--darkpurpel);
+    }
+    main>section>div{
+        color:var(--darkpurpel);
+        font-size:1.2rem;
+        
+        padding: 2%;
+        width: 70%;
+    }
+    main>section>img {
+        border-radius: 10px;
+        margin-bottom: 2%;
+        max-width: 100%;
+        box-shadow: 10px 10px var(--purpel);
+        width: 70%;
+      
+    }
+    
+
+}
