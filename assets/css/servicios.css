@@ -158,6 +158,12 @@ main>section button a {
     font-weight: bold;
 }
 
+.img_logo{
+    width: 3rem;
+    height: 1.9rem;
+    margin: 2.11rem;
+}
+
 
 
 .container-section1 {
@@ -275,5 +281,11 @@ display:flex;
       
     }
     
+
+    .img_logo{
+        width: 5rem;
+        height: 3rem;
+        margin: 2.3rem;
+    }  
 
 }
