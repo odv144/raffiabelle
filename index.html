@@ -118,16 +118,18 @@
             </div>
 
             <div class="contenedor_textos_slider">
-              <h1 class="titulo_slider titulo_slider1" >
+              <h1 class="titulo_slider titulo_slider1">
                 <i>Bienvenido, frío!</i>
               </h1>
-              <h2 class="subtitulo_slider subtitulo_slider1" >
+              <h2 class="subtitulo_slider subtitulo_slider1">
                 Este es el momento ideal para realizarte una limpieza profunda
               </h2>
               <a
-                href="/assets/pages/servicio.html#seccion-3" class="boton_slider color1 boton_slider1"
+                href="/assets/pages/servicio.html#seccion-3"
+                class="boton_slider color1 boton_slider1"
                 style="--j: 0.1s"
-                >Conocé los beneficios del Peeling</a>
+                >Conocé los beneficios del Peeling</a
+              >
             </div>
 
             <div class="ola" style="height: 200px; overflow: hidden">
@@ -162,8 +164,11 @@
               <h2 class="subtitulo_slider">
                 Modelá tu nariz sin cirugía con ácido hialurónico
               </h2>
-              <a href="/assets/pages/servicio.html#seccion-2" class="boton_slider color2 boton_slider2"
-                >Conocé más sobre Rinomodelación</a>
+              <a
+                href="/assets/pages/servicio.html#seccion-2"
+                class="boton_slider color2 boton_slider2"
+                >Conocé más sobre Rinomodelación</a
+              >
             </div>
 
             <div class="ola" style="height: 200px; overflow: hidden">
@@ -192,11 +197,15 @@
             </div>
 
             <div class="contenedor_textos_slider">
-              <h1 class="titulo_slider titulo_slider3"><i>Nuevo tratamiento!</i></h1>
+              <h1 class="titulo_slider titulo_slider3">
+                <i>Nuevo tratamiento!</i>
+              </h1>
               <h2 class="subtitulo_slider subtitulo_slider3">
                 Plasma rico en plaquetas con gel bioestimulante
               </h2>
-              <a href="/assets/pages/servicio.html#seccion-1" class="boton_slider color1"
+              <a
+                href="/assets/pages/servicio.html#seccion-1"
+                class="boton_slider color1"
                 >Agendá tu sesión de PRP</a
               >
             </div>
@@ -227,7 +236,9 @@
             </div>
 
             <div class="contenedor_textos_slider">
-              <h1 class="titulo_slider titulo_slider4"><i>Tu piel merece lo mejor!</i></h1>
+              <h1 class="titulo_slider titulo_slider4">
+                <i>Tu piel merece lo mejor!</i>
+              </h1>
               <h2 class="subtitulo_slider subtitulo_slider4">
                 Conocé nuestra línea de productos LACA para cuidar tu piel
               </h2>
@@ -251,7 +262,8 @@
       </section>
     </main>
     <main class="container-home">
-      <article class="article1">
+      <div id="index-article">
+        <article class="article1">
         <div>
           <i class="fa fa-heartbeat"></i>
           <h3>Belleza y salud, en un solo lugar</h3>
@@ -261,7 +273,6 @@
           </p>
         </div>
       </article>
-
       <article class="article2">
         <div>
           <i class="fab fa-whatsapp-square"></i>
@@ -283,6 +294,10 @@
           </p>
         </div>
       </article>
+      </div>
+      
+
+      
 
       <section class="container-section5">
         <div class="contenido-grid">
@@ -296,22 +311,32 @@
         </div>
       </section>
 
-      <section class="container-section6">
-        <!-- <img src="assets/img/Plasma_rico_plaquetas.png" alt=""> -->
-        <button>
-          <a href="/assets/pages/servicio.html#seccion-1">Plasma rico en plaquetas</a>
-        </button>
-      </section>
-      <section class="container-section7">
-        <!-- <img src="assets/img/Rinomodelación_cirugía.png" alt=""> -->
-        <button>
-          <a href="/assets/pages/servicio.html#seccion-2">Rinomodelación sin cirugía</a>
-        </button>
-      </section>
+      <!-- agrupando  -->
+      <div id="serviciosIndex">
+        <section class="container-section6">
+          <!-- <img src="assets/img/Plasma_rico_plaquetas.png" alt=""> -->
+          <button>
+            <a href="/assets/pages/servicio.html#seccion-1"
+              >Plasma rico en plaquetas</a
+            >
+          </button>
+        </section>
+        <section class="container-section7">
+          <!-- <img src="assets/img/Rinomodelación_cirugía.png" alt=""> -->
+          <button>
+            <a href="/assets/pages/servicio.html#seccion-2"
+              >Rinomodelación sin cirugía</a
+            >
+          </button>
+        </section>
+     
+
       <section class="container-section8">
         <!-- <img src="assets/img/Limpieza_de_cutis.png" alt=""> -->
         <button>
-          <a href="/assets/pages/servicio.html#seccion-3">Limpieza de cutis y Peeling</a>
+          <a href="/assets/pages/servicio.html#seccion-3"
+            >Limpieza de cutis y Peeling</a
+          >
         </button>
       </section>
       <section class="container-section9">
@@ -331,6 +356,11 @@
           <h2>Te esperamos en Rafiaa Belle!</h2>
         </div>
       </section>
+
+    </div>
+    <!-- fin de agrupacion -->
+
+
       <section class="container-section12">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1645.0467747379635!2d-58.90371655557246!3d-34.4497731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1682362907481!5m2!1ses!2sar"
@@ -347,11 +377,11 @@
           <p>12 de octubre y Pisco Ruta 8 km. 50, Pila</p>
           <!-- <img src="" alt="Redes" /> -->
           <a href="https://www.facebook.com/rafiaabelle" target="_blank">
-              <i class="fa-brands fa-square-facebook fa-2xl" ></i>
-            </a>
+            <i class="fa-brands fa-square-facebook fa-2xl"></i>
+          </a>
           <a href="https://www.instagram.com/rafiaa_belle/" target="_blank">
-              <i class="fa-brands fa-instagram fa-2xl"></i>
-            </a>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+          </a>
         </div>
       </section>
     </main>

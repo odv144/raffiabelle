@@ -9,7 +9,9 @@ main.container-home {
 
 }
 
-main.container-home>section {
+
+
+main.container-home>section, #serviciosIndex>section {
     display: flex;
     min-height: 130px;
     justify-content: center;
@@ -21,7 +23,7 @@ main.container-home>section {
 
 }
 
-main.container-home>section>img {
+main.container-home>section>img, #serviciosIndex>section>img {
     max-width: 100%;
     height: auto;
 }
@@ -96,7 +98,7 @@ main section>div.contenido-grid {
 
 }
 
-main section>h3 {
+main section>h3, #serviciosIndex>section>h3 {
     /* border:2px solid var(--purpel); */
     border-radius: 25px;
     font-size: 0.9rem;
@@ -112,13 +114,13 @@ main section>h3 {
 
 }
 
-main>section button {
+main>section button, #serviciosIndex>section button {
     border-radius: 25px;
     background-color: var(--lightpurpel);
     padding: 5px 10px;
 }
 
-main>section button a {
+main>section button a,#serviciosIndex>section button a {
     color: var(--darkpurpel);
     font-weight: bold;
 }
@@ -179,7 +181,6 @@ main>section>p {
 
 .container-section6 {
     grid-area: section6;
-   
     aspect-ratio: 1/0.4;
     background-image: url('../img/Plasma_rico_plaquetas.png');
     background-size: cover;
@@ -247,18 +248,18 @@ section.container-section12>iframe{
 @media (min-width: 1024px) {
 
     body {
-        display: grid;
+        /* display: grid;
         grid-column: 5% 90% 5%;
         grid-template-areas:
         'header header '
-        'main main ';
-       
+        'main main '; */
+       overflow-x: hidden;
         /* grid-template-rows: 30% 70%; */
     }
     
     main.container-home  {
 
-        display:grid;
+        /* display:grid;
         grid-template-areas:
         'container-section1 container-section1 container-section1'
         'article1 article2 article3'
@@ -267,16 +268,38 @@ section.container-section12>iframe{
         'container-section9 container-section10 '
         'container-section12 container-section12 '
         ;
-        
-        /* grid-template-columns: 30% 15% 15% 30% ;
+         */
+       
+         /* grid-template-columns: 30% 15% 15% 30% ;
         grid-template-rows: repeat(1fr,13); */
         background-color:var(--purpel);
         
         
          
     } 
-   
+    #serviciosIndex{
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;    
+    width:100vw;
+}
+#serviciosIndex section{
+    width: 45%;
+}
 
+#index-article{
+        justify-content: space-between;
+        display:flex;
+        flex-wrap: wrap;
+        width:100vw;
+    }
+    #index-article >article{
+        width:30%;
+        color:var(--darkpurpel);
+    }
+    .slider>.contenedor_slider{
+        width:100vw;
+    }
     article.container-section1{
         grid-column:  1 / span 4;
         grid-row: 1 / 2;
@@ -315,6 +338,9 @@ section.container-section12>iframe{
         grid-row:3/4;
         border:none;
     }
+
+
+
     main>section>div.contenido-grid{
         max-width: 70%;
         border-top-right-radius: 25px;
@@ -324,7 +350,11 @@ section.container-section12>iframe{
         border-left: 15px solid #855196c7;
         background-color: rgba(255, 255, 255, 0.418);
     }
+   
+     #serviciosIndex>section{
+        min-height: 230px;
 
+     }
     .container-section6 {
         grid-column: 1 / span 2;
         grid-row:4/5;
