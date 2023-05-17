@@ -14,7 +14,7 @@ html * {
 body {
     font-family: 'Figtree', sans-serif, 'Nunito';
     margin: 0;
-  
+    
 }
 
 body>* {    
@@ -256,6 +256,7 @@ display:flex;
 @media (min-width: 1024px) {
 
     body {
+        overflow-x: hidden;
         display: grid;          
         grid-template-areas:
         'header'
