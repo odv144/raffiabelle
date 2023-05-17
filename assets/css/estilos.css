@@ -173,7 +173,6 @@ header {
     transition: .65s;
 }
 
-
 #check:checked ~.nav_links {
     transform: translateX(0);
 }
@@ -532,6 +531,7 @@ header {
        transform: translateY(0px);
    }
 }
+ 
 
 
 /*Maquetado Tablet*/
@@ -707,7 +707,7 @@ header {
             }
            
            .img_slider{
-            margin-top: 7.5rem;  
+            margin-top: 6rem;  
             width: 18rem;
             height: 19rem;
            }
