@@ -83,16 +83,18 @@ header {
 
 }
 
-.tbox1 > h3{
 
-  /* overflow:hidden;
+/*
+.tbox1 > h3{
+   overflow:hidden;
   margin: 0 auto;
   white-space: nowrap;
   letter-spacing: .15em;
   animation:
-    typing 3s steps(40,end); */
-
-}
+    typing 3s steps(40,end);
+    
+  }
+  */
 
 @keyframes typing {
     from {width: 0%;}
@@ -120,7 +122,7 @@ div>article{
         justify-content: center;
         align-items: center;
   margin: 1%;
-  padding: 4%;
+  padding-top: 4%;
 
 }
 article>img{
@@ -224,6 +226,7 @@ article>p::before{
         justify-content: center;
         align-items: center;
         /* align-content: center; */
+       
 
 
     }
@@ -248,9 +251,9 @@ article>p::before{
         flex-wrap: wrap;
         margin: 1rem;
         max-width:70vw;
-        max-height:50vh;
+        max-height:max-content;
         padding: 1rem;
-        border: 2px solid #4b2358;
+        border: 2px solid #4b2358; 
         border-style: groove;
         border-radius: 25px;
         flex: 1 1 0;

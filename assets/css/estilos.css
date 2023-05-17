@@ -177,6 +177,15 @@ header {
     transform: translateX(0);
 }
 
+/* para sacar navbar en servicios */
+
+
+.desplegable_link :checked  {
+    transform: translateX(0);
+}
+
+
+
 #check:checked ~.nav_links .nav_link {
     animation: animacion_menu .5s ease forwards var(--i);
 }
@@ -306,7 +315,6 @@ header {
 
 .contenido_slider{
     margin-top: 6.5rem;
-    /* position: relative; */
 }
 
 
@@ -525,6 +533,7 @@ header {
 }
  
 
+
 /*Maquetado Tablet*/
 
 @media  screen and (min-width: 768px)  {
@@ -658,6 +667,7 @@ header {
             
             .desplegable_link:hover > a {
                 background-color: rgba(255, 255, 255, .8);
+              
             }
             
             .desplegable_link:not(:nth-last-child(2)) {
@@ -667,7 +677,7 @@ header {
             .desplegable_link:first-child:hover ~.flecha {
                 background-color: #fff;
             }
-        
+           
         
            .flecha{
                 width: 11px;    
@@ -741,3 +751,10 @@ header {
         
             
 }
+
+
+
+
+
+
+
