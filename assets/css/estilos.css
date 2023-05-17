@@ -173,6 +173,7 @@ header {
     transition: .65s;
 }
 
+
 #check:checked ~.nav_links {
     transform: translateX(0);
 }
@@ -522,7 +523,7 @@ header {
        transform: translateY(0px);
    }
 }
- 
+
 
 /*Maquetado Tablet*/
 
@@ -657,6 +658,7 @@ header {
             
             .desplegable_link:hover > a {
                 background-color: rgba(255, 255, 255, .8);
+              
             }
             
             .desplegable_link:not(:nth-last-child(2)) {
@@ -666,7 +668,7 @@ header {
             .desplegable_link:first-child:hover ~.flecha {
                 background-color: #fff;
             }
-        
+           
         
            .flecha{
                 width: 11px;    
