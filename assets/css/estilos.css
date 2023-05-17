@@ -178,6 +178,15 @@ header {
     transform: translateX(0);
 }
 
+/* para sacar navbar en servicios */
+
+
+.desplegable_link :checked  {
+    transform: translateX(0);
+}
+
+
+
 #check:checked ~.nav_links .nav_link {
     animation: animacion_menu .5s ease forwards var(--i);
 }

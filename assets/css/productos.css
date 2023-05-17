@@ -96,22 +96,6 @@ section > div.productos > div.item-pro > label{
 
 
 
-/*marcado de areas para movil*/
-
-/* @media only screen and (min-width : 400px) {
-
-    body {
-        background-color: var(--lightpurpel);
-        display: grid;
-        grid-template-areas:
-            'header'
-            'main'
-            'footer';
-    }
-} */
-
-
-
 /* Tablet */
 @media only screen and (min-width:768px)  {
     .titulo{

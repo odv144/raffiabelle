@@ -17,12 +17,10 @@ body {
   
 }
 
-body>* {
-    /* display: flex; */
+body>* {    
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    /* background-color: var(--lightpurpel); */
+    flex-direction: column;   
 }
 
 
@@ -34,12 +32,12 @@ header {
     min-height: 50px;
     width: 100%;
     overflow:hidden;
-
 }
 
 a{
     text-decoration: none;
 }
+
 
 
 main{
@@ -53,37 +51,42 @@ main{
     'section5'
     'section-acerca'
     ;
-    width: 100vw;
-    /* background-color: var(--lightpurpel); */
+    width: 100vw;  
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
+
 main>div{
     grid-area: header1;
     width:100%;
-    background-color: var(--purpel);
-   
+    background-color: var(--purpel);   
     padding: 5%;
-
 }
+
 main>div>h3{
-    color: var(--darkpurpel);
-    font-size: 1.3rem;
+    color: var(--darkpurpel);   
+    font-size: 1rem;
     font-family: 'Figtree';
     font-weight: bold;
+ }
+
+
+ h3{
+    font-size: .9em ;
 }
+
+
 main>section {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
-    margin: 2% 0 2% 0;
-    
-
+    margin: 2% 0 2% 0;  
 }
+
+
 main>section>span{
     background-color: var(--darkpurpel);
     min-width:100%;
@@ -93,18 +96,22 @@ main>section>span{
     font-size: 1.4rem;
     align-items: center;
     justify-content: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px var(--lightpurpel);
+    padding: 2%;
 }
 
 main>section>h3{
     display:flex;
     min-width:100%;
-      align-items: center;
+    align-items: center;
     justify-content: center;
     color:black;
-    font-weight: bold;
-    
+    font-weight: bold;    
     padding: 2%;
     margin:2%;
+    color: var(--purpel);
 }
 
 main>section>div{
@@ -113,6 +120,7 @@ main>section>div{
    flex-direction: column;
     padding: 5%;
 }
+
 main>section>div>p{
     width: 100%;
     color:white;
@@ -120,17 +128,16 @@ main>section>div>p{
     color: var(--darkpurpel);
     font-stretch: expanded;
     font-weight: bold;
+    font-size: .9em;
 }
 
 main>section>img {
     border-radius: 10px;
     margin-bottom: 2%;
-    max-width: 90%;
+    max-width: 80%;
     box-shadow: 10px 10px var(--purpel);
-    height: auto;
-  
+    height: auto;     
 }
-
 
 
 main section>div.contenido-grid {
@@ -140,11 +147,8 @@ main section>div.contenido-grid {
     background-color: white;
     display: grid;
     grid-template-columns:
-        "3fr 1fr";
-    /* grid-template-rows: "1fr 1fr 1fr"; */
+        "3fr 1fr";  
     margin: 2%;
-
-
 }
 
 main>section button {
@@ -158,19 +162,22 @@ main>section button a {
     font-weight: bold;
 }
 
+.img_logo{
+    width: 3rem;
+    height: 1.7rem;
+    margin: 2rem;
+}
 
 
 .container-section1 {
     grid-area: section1;
       aspect-ratio: 1/0.4;
-
 }
 
 
 .container-section2 {
     grid-area: section2;
-    aspect-ratio: 1/0.4;
-   
+    aspect-ratio: 1/0.4;  
 }
 
 .container-section3{
@@ -181,23 +188,19 @@ main>section button a {
 
 .container-section4 {
     grid-area: section4;
-    aspect-ratio: 1/0.4;
-    /* background-image: url('../img/Dermapen.png');
-    background-size: cover; */
-
+    aspect-ratio: 1/0.4;    
 }
 
 .container-section5 {
     grid-area: section5;
-    aspect-ratio: 1/0.4;
-    
-
+    aspect-ratio: 1/0.4;   
 }
+
 .section-acerca-3{
     grid-area:section-acerca;
-    margin:5%;
-    
+    margin:5%;    
 }
+
 .section-acerca-3>div{
 display:flex;
     justify-content: center;
@@ -206,29 +209,60 @@ display:flex;
     width:50%;
     border:2px solid var(--darkpurpel);
     background-color: var(--purpel);
-    border-radius: 15px;
-  
+    border-radius: 15px;  
 }
+
 .section-acerca-3>div>p{
     text-align: center;
 }
 
 
+
+@media  screen and (min-width: 768px) {
+    main>div>h3{        
+        font-size: 1.3rem;       
+    }
+
+    main>section>span{        
+        font-size: 1.7em;
+    }
+
+    h3{
+        font-size: 1.2em;
+    }
+
+    .header1 h3{
+        font-size: 1.3em;
+    }    
+    main>section>div>p{       
+        font-size: 1.2em;
+    }
+
+    main>section>span{       
+        font-size: 1.5rem;        
+    }
+
+    .img_logo{
+        width: 3.5rem;
+        height: 1.9rem;
+        margin: .95rem;
+    }
+
+   
+}
+
+
+
 @media (min-width: 1024px) {
 
     body {
-        display: grid;
-        
-        /* grid-column: 5% 90% 5%; */
+        display: grid;          
         grid-template-areas:
         'header'
-        'main';
-       
-        /* grid-template-rows: 30% 70%; */
+        'main';       
     }
     
     main  {
-
         display:grid;
         grid-template-areas: 
         'header1'
@@ -238,42 +272,46 @@ display:flex;
         'section4'
         'section5'
         'section-acerca';
-        width:100vw;
-        /* grid-template-columns: 30% 15% 15% 30% ;
-        grid-template-rows: repeat(1fr,13); */
-       
+        width:100vw;        
         border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
-        
-         
+        border-top-left-radius: 25px;                 
     } 
-    main>section>span{
-        font-size: 2rem;
-        font-weight: bold;
-        text-shadow: 4px 4px 5px var(--lightpurpel);
-        padding: 2%;
+
+    .header1 h3{
+        font-size: 1.7rem;
     }
+    main>section>div>p{       
+        font-size: 1.5em;
+    }
+
+   
+    main>section>span{
+        font-size: 2rem;        
+    }
+
     main>section>h3{
-        font-size: 1.5rem;
-        width: 70%;
-        font-weight: 900;
-        color:var(--darkpurpel);
+        font-size: 1.8rem;
+        width: 80%;
     }
     main>section>div{
         color:var(--darkpurpel);
-        font-size:1.2rem;
-        
+        font-size: 1.1rem;        
         padding: 2%;
         width: 70%;
     }
+
     main>section>img {
         border-radius: 10px;
         margin-bottom: 2%;
         max-width: 100%;
         box-shadow: 10px 10px var(--purpel);
-        width: 70%;
-      
+        width: 70%;      
     }
     
+    .img_logo{
+        width: 5rem;
+        height: 3rem;
+        margin: 2.3rem;
+    }  
 
 }
