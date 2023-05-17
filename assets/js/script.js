@@ -129,5 +129,3 @@ window.addEventListener('load', (e) => {
 });
 
 // Parte para enviar el  formulario
-
-
